@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defsentry - Cybersecurity Services</title>
+    <link rel="shortcut icon" type="logo" href="C:\Users\avina\Downloads\defenstry .png.png">
+    <!-- Link to our custom CSS file -->
+    <link rel="stylesheet" href="defenstry.css.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container flex justify-between items-center">
+            <div class="navbar-brand">
+                <!-- ShieldCheck Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Defsentry-cybersecurity investigation</span>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links">
+                <button class="nav-link active" data-page="home">
+                    <!-- Home Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home
+                </button>
+                <button class="nav-link" data-page="about">
+                    <!-- Users Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    About Us
+                </button>
+                <!-- Services Dropdown (Desktop) -->
+                <div class="dropdown-wrapper">
+                    <button class="nav-link">
+                        <!-- ShieldCheck Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        Services
+                        <!-- ChevronRight Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right chevron-icon"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <button class="service-dropdown-link" data-page="penetration-testing">Penetration Testing</button>
+                        <button class="service-dropdown-link" data-page="vulnerability-assessment">Vulnerability Assessment</button>
+                        <button class="service-dropdown-link" data-page="cybercrime-investigation">Cybercrime Investigation</button>
+                        <button class="service-dropdown-link" data-page="wireless-penetration-testing">Wireless Penetration Testing</button>
+                        <button class="service-dropdown-link" data-page="system-security-handling">System Security Handling</button>
+                    </div>
+                </div>
+                <button class="nav-link" data-page="careers">
+                    <!-- Briefcase Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    Careers
+                </button>
+                <button class="nav-link" data-page="auth">
+                    <!-- LogIn Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg>
+                    Login / Sign-Up
+                </button>
+                <button class="nav-link" data-page="contact">
+                    <!-- Mail Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Contact Us
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger/Close Icon) -->
+            <div class="mobile-menu-button" id="mobile-menu-button">
+                <!-- Menu Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" id="menu-icon"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <!-- Close Icon SVG (hidden by default) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" id="close-icon" style="display: none;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay and Content -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="mobile-menu-close-button">
+            <!-- Close Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+        <div class="pt-12 pb-4 space-y-2">
+            <button class="mobile-nav-link" data-page="home">
+                <!-- Home Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Home
+            </button>
+            <button class="mobile-nav-link" data-page="about">
+                <!-- Users Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                About Us
+            </button>
+            <div class="mobile-service-category">
+                <!-- ShieldCheck Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> Services 
+            </div>
+            <div class="mobile-service-links space-y-1">
+                <button data-page="penetration-testing">Penetration Testing</button>
+                <button data-page="vulnerability-assessment">Vulnerability Assessment</button>
+                <button data-page="cybercrime-investigation">Cybercrime Investigation</button>
+                <button data-page="wireless-penetration-testing">Wireless Penetration Testing</button>
+                <button data-page="system-security-handling">System Security Handling</button>
+            </div>
+            <button class="mobile-nav-link" data-page="careers">
+                <!-- Briefcase Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                Careers
+            </button>
+            <button class="mobile-nav-link" data-page="auth">
+                <!-- LogIn Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-in"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" x2="3" y1="12" y2="12"/></svg>
+                Login / Sign-Up
+            </button>
+            <button class="mobile-nav-link" data-page="contact">
+                <!-- Mail Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Contact Us
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content Area - Page Sections -->
+    <main style="padding-top: 4rem;"> <!-- Padding top to account for fixed header -->
+        <!-- Home Page Section -->
+        <section id="home-page" class="page-section active">
+            <div class="hero-section text-center">
+                <div class="container px-4 py-16">
+                    <h1 class="animate-fade-in-up">
+                        Secure Your Digital Frontier with <span class="text-green-400">Defsentry</span>
+                    </h1>
+                    <p class="animate-fade-in-up animate-delay-200">
+                        At Defsentry, we are dedicated to safeguarding your organization against the ever-evolving landscape of digital threats. Our expert team provides comprehensive cybersecurity services tailored to protect your infrastructure and sensitive data.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up animate-delay-400">
+                        <button class="btn btn-primary" data-page="services">
+                            <!-- ShieldCheck Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            Explore Our Services
+                        </button>
+                        <button class="btn btn-secondary" data-page="contact">
+                            <!-- Mail Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-4 py-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-10 text-center">Why Choose <span class="text-green-600">Defsentry</span>?</h2>
+                <div class="grid grid-cols-1 grid-cols-md-3 gap-8">
+                    <div class="card card-hover">
+                        <!-- ShieldCheck Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        <h3>Proactive Defense</h3>
+                        <p>Identify and mitigate vulnerabilities before they can be exploited.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <!-- Users Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <h3>Expert Team</h3>
+                        <p>Leverage the knowledge of certified cybersecurity professionals.</p>
+                    </div>
+                    <div class="card card-hover">
+                        <!-- CheckCircle Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg>
+                        <h3>Tailored Solutions</h3>
+                        <p>Custom security strategies designed for your unique business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Page Section -->
+        <section id="about-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">About <span class="text-green-600">Defsentry</span></h1>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Defsentry is a leading cybersecurity company dedicated to protecting organizations from the ever-evolving landscape of digital threats. Founded on the principles of integrity, expertise, and proactive defense, we provide comprehensive security solutions designed to safeguard your critical assets and ensure business continuity.
+                </p>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Our team comprises highly skilled and certified cybersecurity professionals with extensive experience in various domains, including penetration testing, vulnerability management, incident response, and security architecture. We leverage cutting-edge tools and methodologies to deliver unparalleled security services tailored to the unique needs of each client.
+                </p>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4 mt-8 text-center">Our Mission</h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    To empower organizations with robust cybersecurity defenses, enabling them to operate securely and confidently in a connected world. We strive to be the trusted partner that helps businesses anticipate, detect, and respond to cyber threats effectively.
+                </p>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4 mt-8 text-center">Our Values</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-6">
+                    <li><span class="font-semibold text-green-600">Integrity:</span> Upholding the highest ethical standards in all our operations.</li>
+                    <li><span class="font-semibold text-green-600">Excellence:</span> Delivering top-tier security services through continuous improvement and innovation.</li>
+                    <li><span class="font-semibold text-green-600">Client Focus:</span> Prioritizing our clients' security needs and building lasting partnerships.</li>
+                    <li><span class="font-semibold text-green-600">Innovation:</span> Staying ahead of emerging threats with advanced research and development.</li>
+                    <li><span class="font-semibold text-green-600">Collaboration:</span> Working closely with clients to achieve shared security goals.</li>
+                </ul>
+                <div class="mt-10 text-center">
+                    <img src="C:\Users\avina\Downloads\defenstry .png.png" alt="Defsentry Team" class="rounded-lg shadow-md mx-auto" />
+                    <p class="text-sm text-gray-500 mt-4">Our dedicated team, working together to secure your future.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page (Overview) Section -->
+        <section id="services-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Our <span class="text-green-600">Services</span></h1>
+                <p class="text-lg text-gray-700 mb-10 text-center max-w-3xl mx-auto">
+                    Defsentry offers a comprehensive suite of cybersecurity services designed to protect your organization from a wide array of digital threats. Our tailored solutions ensure your infrastructure and data remain secure, compliant, and resilient.
+                </p>
+
+                <div class="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-8">
+                    <div class="card card-hover service-card" data-page="penetration-testing">
+                        <!-- Search Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        <h3>Penetration Testing</h3>
+                        <p>Simulate real-world cyberattacks to identify vulnerabilities in your systems, applications, and networks.</p>
+                        <button class="learn-more-btn">
+                            Learn More <!-- ChevronRight Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                    <div class="card card-hover service-card" data-page="vulnerability-assessment">
+                        <!-- ShieldCheck Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        <h3>Vulnerability Assessment</h3>
+                        <p>Systematic identification and analysis of security weaknesses in your IT infrastructure.</p>
+                        <button class="learn-more-btn">
+                            Learn More <!-- ChevronRight Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                    <div class="card card-hover service-card" data-page="cybercrime-investigation">
+                        <!-- User Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <h3>Cybercrime Investigation</h3>
+                        <p>Expert support in investigating digital crimes, recovering data, and providing forensic analysis.</p>
+                        <button class="learn-more-btn">
+                            Learn More <!-- ChevronRight Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                    <div class="card card-hover service-card" data-page="wireless-penetration-testing">
+                        <!-- Wifi Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.65a10 10 0 0 1 14 0"/><path d="M8 16.47a5 5 0 0 1 8 0"/></svg>
+                        <h3>Wireless Penetration Testing</h3>
+                        <p>Assess the security of your wireless networks to prevent unauthorized access and data breaches.</p>
+                        <button class="learn-more-btn">
+                            Learn More <!-- ChevronRight Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                    <div class="card card-hover service-card" data-page="system-security-handling">
+                        <!-- HardDrive Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive"><path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></svg>
+                        <h3>System Security Handling</h3>
+                        <p>Comprehensive management and hardening of your systems to enhance overall security posture.</p>
+                        <button class="learn-more-btn">
+                            Learn More <!-- ChevronRight Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                    <div class="card card-hover service-card" data-page="contact">
+                        <!-- Lock Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <h3>Custom Security Solutions</h3>
+                        <p>Tailored cybersecurity strategies and implementations to meet your unique business requirements.</p>
+                        <button class="learn-more-btn">
+                            Learn More <!-- ChevronRight Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Penetration Testing Detail Page -->
+        <section id="penetration-testing-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <div class="flex flex-col items-center mb-8 service-detail-icon">
+                    <!-- Search Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <h1 class="text-4xl font-bold text-gray-900 mt-4 text-center">Penetration Testing</h1>
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    Penetration testing, often called 'pen testing,' is a simulated cyberattack against your computer system to check for exploitable vulnerabilities. In the context of web application security, penetration testing is commonly used to augment a web application firewall (WAF). Pen testing can involve the attempted breaching of any number of application systems, (e.g., application protocol interfaces (APIs), frontend/backend servers) to uncover vulnerabilities, such as unsanitized inputs that are susceptible to code injection attacks.
+                </p>
+
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-8 mt-10">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Key Features
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Web Application Penetration Testing</li>
+                            <li>Network Penetration Testing</li>
+                            <li>Mobile Application Penetration Testing</li>
+                            <li>Cloud Security Penetration Testing</li>
+                            <li>API Penetration Testing</li>
+                            <li>Internal & External Penetration Testing</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Benefits
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Identify critical vulnerabilities before attackers do.</li>
+                            <li>Ensure compliance with industry regulations.</li>
+                            <li>Protect sensitive data and intellectual property.</li>
+                            <li>Improve your overall security posture.</li>
+                            <li>Gain a clear understanding of your risk exposure.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="btn btn-primary mx-auto" data-page="contact">
+                        <!-- Mail Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Request a Consultation
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vulnerability Assessment Detail Page -->
+        <section id="vulnerability-assessment-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <div class="flex flex-col items-center mb-8 service-detail-icon">
+                    <!-- ShieldCheck Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <h1 class="text-4xl font-bold text-gray-900 mt-4 text-center">Vulnerability Assessment</h1>
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    A vulnerability assessment is the process of identifying, quantifying, and prioritizing the vulnerabilities in a system. It involves using automated tools and manual techniques to scan and analyze your IT infrastructure for known security weaknesses. Unlike penetration testing, which actively exploits vulnerabilities, a vulnerability assessment focuses on discovery and reporting.
+                </p>
+
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-8 mt-10">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Key Features
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Network Vulnerability Scanning</li>
+                            <li>Web Application Vulnerability Scanning</li>
+                            <li>Database Vulnerability Assessment</li>
+                            <li>Cloud Infrastructure Assessment</li>
+                            <li>Configuration Review</li>
+                            <li>Compliance-focused Assessments</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Benefits
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Comprehensive overview of security weaknesses.</li>
+                            <li>Prioritized remediation steps.</li>
+                            <li>Reduced risk of successful cyberattacks.</li>
+                            <li>Enhanced security awareness within your organization.</li>
+                            <li>Cost-effective way to identify and manage risks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="btn btn-primary mx-auto" data-page="contact">
+                        <!-- Mail Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Request a Consultation
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cybercrime Investigation Detail Page -->
+        <section id="cybercrime-investigation-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <div class="flex flex-col items-center mb-8 service-detail-icon">
+                    <!-- User Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <h1 class="text-4xl font-bold text-gray-900 mt-4 text-center">Cybercrime Investigation</h1>
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    Cybercrime investigation involves the systematic process of detecting, analyzing, and recovering digital evidence related to cybercrimes. Our expert forensic investigators assist organizations and law enforcement in tracing digital footprints, identifying perpetrators, and providing crucial evidence for legal proceedings. This service is vital for responding to incidents like data breaches, fraud, and intellectual property theft.
+                </p>
+
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-8 mt-10">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Key Features
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Digital Forensics and Evidence Collection</li>
+                            <li>Incident Response and Analysis</li>
+                            <li>Malware Analysis</li>
+                            <li>Data Recovery and Preservation</li>
+                            <li>Expert Witness Testimony</li>
+                            <li>Fraud Investigation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Benefits
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Rapid response to security incidents.</li>
+                            <li>Accurate identification of attack vectors and perpetrators.</li>
+                            <li>Preservation of critical digital evidence.</li>
+                            <li>Minimization of financial and reputational damage.</li>
+                            <li>Support for legal and regulatory compliance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="btn btn-primary mx-auto" data-page="contact">
+                        <!-- Mail Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Request a Consultation
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wireless Penetration Testing Detail Page -->
+        <section id="wireless-penetration-testing-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <div class="flex flex-col items-center mb-8 service-detail-icon">
+                    <!-- Wifi Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.65a10 10 0 0 1 14 0"/><path d="M8 16.47a5 5 0 0 1 8 0"/></svg>
+                    <h1 class="text-4xl font-bold text-gray-900 mt-4 text-center">Wireless Penetration Testing</h1>
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    Wireless penetration testing assesses the security of your wireless networks (Wi-Fi, Bluetooth, etc.) to identify vulnerabilities that could be exploited by attackers. With the proliferation of wireless devices, securing these networks is crucial to prevent unauthorized access, data interception, and network compromise. Our testing simulates attacks to expose weaknesses in your wireless infrastructure.
+                </p>
+
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-8 mt-10">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Key Features
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Wireless Network Vulnerability Scanning</li>
+                            <li>WPA/WPA2/WPA3 Security Assessment</li>
+                            <li>Rogue Access Point Detection</li>
+                            <li>Wireless Evasion Techniques Testing</li>
+                            <li>Bluetooth Security Assessment</li>
+                            <li>Wireless Device Configuration Review</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Benefits
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Secure your wireless infrastructure from unauthorized access.</li>
+                            <li>Protect sensitive data transmitted over wireless networks.</li>
+                            <li>Ensure compliance with wireless security best practices.</li>
+                            <li>Prevent denial-of-service attacks on wireless services.</li>
+                            <li>Identify and eliminate rogue access points.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="btn btn-primary mx-auto" data-page="contact">
+                        <!-- Mail Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Request a Consultation
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Security Handling Detail Page -->
+        <section id="system-security-handling-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <div class="flex flex-col items-center mb-8 service-detail-icon">
+                    <!-- HardDrive Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive"><path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></svg>
+                    <h1 class="text-4xl font-bold text-gray-900 mt-4 text-center">System Security Handling</h1>
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    System Security Handling involves the comprehensive management and hardening of your IT systems to enhance their overall security posture. This includes implementing security controls, configuring systems securely, managing patches, monitoring for threats, and ensuring adherence to security policies. Our services aim to build a resilient and secure computing environment for your organization.
+                </p>
+
+                <div class="grid grid-cols-1 grid-cols-md-2 gap-8 mt-10">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Key Features
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Security Configuration Management</li>
+                            <li>Patch Management and Updates</li>
+                            <li>Security Monitoring and Logging</li>
+                            <li>Endpoint Security Solutions</li>
+                            <li>Server Hardening</li>
+                            <li>Operating System Security Best Practices</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <!-- CheckCircle Icon SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 2 2 4-4"/></svg> Benefits
+                        </h2>
+                        <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                            <li>Strengthen your system's defenses against cyberattacks.</li>
+                            <li>Reduce the attack surface of your IT infrastructure.</li>
+                            <li>Ensure continuous compliance with security policies.</li>
+                            <li>Proactive threat detection and response.</li>
+                            <li>Improved operational efficiency and reduced downtime.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <button class="btn btn-primary mx-auto" data-page="contact">
+                        <!-- Mail Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Request a Consultation
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Careers Page Section -->
+        <section id="careers-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">Join Our <span class="text-green-600">Team</span></h1>
+                <p class="text-lg text-gray-700 mb-8 text-center max-w-2xl mx-auto">
+                    At Defsentry, we are always looking for passionate and skilled cybersecurity professionals to join our growing team. If you are driven by innovation, committed to excellence, and eager to make a real impact in the digital security landscape, we encourage you to explore our career opportunities.
+                </p>
+
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4 mt-8">Why Work at Defsentry?</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2 mb-8">
+                    <li>Be part of a dynamic and innovative cybersecurity firm.</li>
+                    <li>Work with cutting-edge technologies and challenging projects.</li>
+                    <li>Continuous learning and professional development opportunities.</li>
+                    <li>Collaborative and supportive work environment.</li>
+                    <li>Competitive compensation and benefits package.</li>
+                    <li>Make a significant impact in protecting organizations worldwide.</li>
+                </ul>
+
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4 mt-8">Current Openings</h2>
+                <div class="space-y-6">
+                    <div class="card card-hover">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Senior Penetration Tester</h3>
+                        <p class="text-md text-gray-600 mb-3">Remote / Hybrid</p>
+                        <p class="text-gray-700 mb-4">We are seeking an experienced Penetration Tester to lead complex security assessments and provide actionable insights to clients.</p>
+                        <h4 class="text-lg font-medium text-gray-800 mb-2">Requirements:</h4>
+                        <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                            <li>5+ years of pen testing experience</li>
+                            <li>OSCP/OSCE certification</li>
+                            <li>Strong report writing skills</li>
+                        </ul>
+                    </div>
+                    <div class="card card-hover">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Cybersecurity Analyst</h3>
+                        <p class="text-md text-gray-600 mb-3">Remote, Chennai</p>
+                        <p class="text-gray-700 mb-4">Join our SOC team to monitor, detect, and respond to security incidents. Ideal for proactive and analytical individuals.</p>
+                        <h4 class="text-lg font-medium text-gray-800 mb-2">Requirements:</h4>
+                        <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                            <li>2+ years in SOC/security operations</li>
+                            <li>SIEM tools experience</li>
+                            <li>Incident response knowledge</li>
+                        </ul>
+                    </div>
+                    <div class="card card-hover">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Digital Forensics Investigator</h3>
+                        <p class="text-md text-gray-600 mb-3">Remote, Chennai</p>
+                        <p class="text-gray-700 mb-4">Investigate cybercrimes, perform digital forensics, and support legal proceedings with expert analysis.</p>
+                        <h4 class="text-lg font-medium text-gray-800 mb-2">Requirements:</h4>
+                        <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                            <li>3+ years in digital forensics</li>
+                            <li>EnCase/FTK experience</li>
+                            <li>Strong analytical skills</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-lg text-gray-700 mb-4">
+                        Don't see a role that fits your profile? Send us your CV, and we'll keep you in mind for future opportunities.
+                    </p>
+                    <button class="btn btn-primary mx-auto" data-page="contact">
+                        <!-- Mail Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Submit Your CV
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login / Sign-Up Page Section -->
+        <section id="auth-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container max-w-md bg-white p-8 rounded-lg shadow-xl">
+                <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center" id="auth-title">Login</h1>
+                <div id="auth-message-box" class="message-box" style="display: none;"></div>
+                <form id="auth-form" class="space-y-6">
+                    <div class="form-group">
+                        <label for="auth-email" class="form-label">Email Address</label>
+                        <input type="email" id="auth-email" class="form-input" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="auth-password" class="form-label">Password</label>
+                        <input type="password" id="auth-password" class="form-input" placeholder="********" required>
+                    </div>
+                    <div class="form-group" id="confirm-password-group" style="display: none;">
+                        <label for="auth-confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" id="auth-confirm-password" class="form-input" placeholder="********" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full" id="auth-submit-btn">Login</button>
+                </form>
+                <div class="mt-6 text-center">
+                    <button id="toggle-auth-mode" class="text-green-600 hover:text-green-800 font-medium text-sm">Don't have an account? Sign Up</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Page Section -->
+        <section id="contact-page" class="page-section bg-gray-100 py-12 px-4">
+            <div class="container bg-white p-8 rounded-lg shadow-xl">
+                <h1 class="text-4xl font-bold text-gray-900 mb-6 text-center">Contact <span class="text-green-200">Us</span></h1>
+                <p class="text-lg text-gray-700 mb-8 text-center max-w-2xl mx-auto">
+                    Have questions or need assistance with your cybersecurity needs? Reach out to us using the form below, or connect with us directly via phone or email. Our team is ready to help and connnect with You !
+                </p>
+
+                <div class="grid grid-cols-1 contact-grid gap-10">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-5">Send Us a Message</h2>
+                        <div id="contact-status-message" class="message-box" style="display: none;"></div>
+                        <form id="contact-form" class="space-y-5">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Your Name</label>
+                                <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Your Email</label>
+                                <input type="email" id="contact-email" name="email" class="form-input" placeholder="john.doe@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">Subject</label>
+                                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Inquiry about Penetration Testing" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Your Message</label>
+                                <textarea id="contact-message" name="message" rows="5" class="form-textarea" placeholder="Please describe your security needs or questions here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">
+                                <!-- Mail Icon SVG -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                        <h2 class="text-3xl font-semibold text-gray-800 mb-5">Our Details</h2>
+                        <div class="space-y-4 text-lg text-gray-700">
+                            <div class="flex items-center">
+                                <!-- Phone Icon SVG -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-6 w-6 text-green-600 mr-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span> +91 9944083497</span>
+                            </div>
+                            <div class="flex items-center">
+                                <!-- Mail Icon SVG -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-6 w-6 text-green-600 mr-3"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>defsentry@gmail.com</span>
+                            </div>
+                            <div class="flex items-start">
+                                <!-- MapPin Icon SVG -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-6 w-6 text-green-600 mr-3 mt-1"><path d="M12 18.3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M12 22c-4.97 0-9-4.03-9-9a9 9 0 0 1 18 0c0 4.97-4.03 9-9 9Z"/></svg>
+                                <span>Defsentry , <br />Rock lotus tech park <br />Chennai, Tamil Nadu, India - 600001</span>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Business Hours</h3>
+                            <p class="text-lg text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM (IST)</p>
+                            <p class="text-lg text-gray-700">Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container px-4 text-center">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <!-- Facebook Icon SVG -->
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> 
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <!-- Twitter Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-17 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.4 3 4l-1 1c1.5 1.5 3.5 2.4 5.7 2.6C5.5 4.5 2.5 2.5 2 2c2.1 2.8 4.7 4 7.5 4 4.5 0 8.5-4 8.5-8.5 0-.2 0-.4-.02-.6C20.5 5.5 21 4.8 22 4Z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <!-- Linkedin Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/></svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <!-- Instagram Icon SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Defsentry. All rights reserved.</p>
+            <p class="tagline">Protecting your digital world, one threat at a time.</p>
+        </div>
+    </footer>
+    <!-- Link to our custom JavaScript file -->
+    <script src="defenstry.js.js"></script>
+</body>
+</html>
