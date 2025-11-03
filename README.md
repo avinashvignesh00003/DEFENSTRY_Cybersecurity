@@ -4,4 +4,6 @@ they given services of
 -->cybersecurity
 -->web devlopment
 -->business development executive
-
+-->Also i am handle this website as the resposiveness
+-->fixed sizes for the all the screeens without any framworks
+-->fixed for all screens.
